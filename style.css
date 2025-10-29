@@ -476,7 +476,7 @@ li{
 
 
 /* 🔹 Responsive Menu */
-@media(max-width: 480px) {
+@media(max-width: 768px) {
 
   .fa-xmark,
   .fa-bars {
