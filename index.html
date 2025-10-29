@@ -123,6 +123,65 @@
     <img src="img-06.png" alt="#" class="section_img">
   </div>
   </div>
+  <div class="main_heaing_2">
+      <h2 class="main_heading_1">Marketing Integrations</h2>
+        <p class="main_paragraph">Ligula risus auctor tempus magna feugiat lacinia.</p>
+    </div>
+    <div class="content_2">
+    <img src="img-05.png" alt="#" class="content_img_2">
+    <div class="content_part">
+      <span>Productivity Focused</span>
+      <h2 class="content_heading">Achieve more with<br> better workflows</h2>
+      <div class="paragraph_align">
+      <p class="content_para">Sodales tempor sapien quaerat ipsum undo congue laoreet<br> turpis neque auctor turpis vitae dolor luctus placerat magna and<br> ligula cursus purus vitae purus an ipsum suscipit</p>
+      <div class="check_para">
+      <p class="content_para_1"><li>Cursus purus suscipit vitae cubilia magnis volute egestas vitae<br> sapien turpis sodales magna undo aoreet primis</li></p>
+      <p class="content_para_2"><li>Tempor sapien quaerat an ipsum laoreet purus and sapien dolor<br>an ultrice ipsum aliquam undo congue dolor cursus purus</li></p>
+      <p class="content_para">congue and ipsum purus sapien a blandit</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-hero">
+    <div class="main-section">
+      <p class="section_para">Easy Integration</p>
+      <h2 class="section_heading">Plug your essential<br> tools in few clicks</h2>
+      <li><p class="section_para_1">Cursus purus suscipit vitae cubilia magnis volute<br> egestas vitae sapien turpis sodales magna</p></li>
+       <li><p class="section_para_1">Tempor sapien quaerat an ipsum laoreet purus and<br> sapien dolor an ultrice ipsum aliquam congue</p></li>
+      <a href="#" class="link_tag">The smarter way to work<i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <img src="img-02.png" alt="#" class="section_img_0_2">
+    </div>
+      <div class="main_heaing-3">
+      <h2 class="main_heading_1">Reach your audience through<br> social media marketing</h2>
+        <p class="main_paragraph">Ligula risus auctor tempus magna feugiat lacinia.</p>
+    </div>
+     <div class="grid">
+      <div class="content_aligmnet">
+        <div class="lock">
+        <h2 class="grid_heading">Marketing Integrations</h2>
+        <p class="grid_para">Aliquam a augue suscipit luctus diam neque purus<br> ipsum neque and dolor primis libero</p>
+        <div class="image-f06">
+        <img src="f_06.png" alt="#" class="img-f06">
+      </div>
+      </div>
+      </div>
+      
+      
+      
+      <div class="content_aligmnet">
+        <div class="lock">
+         <div class="image-f06">
+        <img src="f_04.png" alt="#" class="img-f04">
+      </div>
+        <h2 class="grid_heading">Marketing Integrations</h2>
+        <p class="grid_para">Aliquam a augue suscipit luctus diam neque purus<br> ipsum neque and dolor primis libero</p>
+      </div>
+      </div>
+      
+     
+    </div>
+  
 
   <script>
     
@@ -175,6 +234,16 @@
   // Observe all .first_card elements
   imgCards.forEach(card => cardObserver.observe(card));
   
+const sectionObserver = new IntersectionObserver(items => {
+  items.forEach(item => {
+    if (item.isIntersecting) {
+      item.target.classList.add('show');
+    }
+  });
+});
+
+const animatedParts = document.querySelectorAll('.main-section, .section_img');
+animatedParts.forEach(part => sectionObserver.observe(part));
 
    
     
